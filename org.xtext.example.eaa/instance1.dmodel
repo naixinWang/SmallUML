@@ -1,0 +1,19 @@
+datatype int
+datatype string
+entity Person{
+	name : string 
+	age : int
+	
+	cardin1 : string
+}
+
+entity car{
+	name : string 
+	
+	cardin1 : string
+}
+
+association have{
+	cardin1 : string 
+	cardin2 : string
+}

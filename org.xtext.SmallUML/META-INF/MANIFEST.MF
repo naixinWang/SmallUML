@@ -1,0 +1,26 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: org.xtext.SmallUML
+Bundle-Vendor: My Company
+Bundle-Version: 1.0.0.qualifier
+Bundle-SymbolicName: org.xtext.SmallUML; singleton:=true
+Bundle-ActivationPolicy: lazy
+Require-Bundle: SmallUML,
+ org.eclipse.xtext,
+ org.eclipse.xtext.xbase,
+ org.eclipse.equinox.common;bundle-version="3.5.0",
+ org.eclipse.xtext.xbase.lib,
+ org.antlr.runtime,
+ org.eclipse.xtext.util,
+ org.eclipse.xtend.lib
+Bundle-RequiredExecutionEnvironment: JavaSE-1.6
+Export-Package: org.xtext.parser.antlr.internal,
+ org.xtext.generator,
+ org.xtext.validation,
+ org.xtext.formatting,
+ org.xtext.serializer,
+ org.xtext.parser.antlr,
+ org.xtext.services,
+ org.xtext.scoping,
+ org.xtext
+Import-Package: org.apache.log4j

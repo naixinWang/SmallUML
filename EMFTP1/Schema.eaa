@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="ASCII"?>
+<Schema xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns="EAA">
+  <ass name="poss&#xe8;de"/>
+  <e name="Personne">
+    <listeRole cardinality="0.*"/>
+  </e>
+  <e name="Voiture">
+    <listeRole cardinality="1"/>
+  </e>
+</Schema>

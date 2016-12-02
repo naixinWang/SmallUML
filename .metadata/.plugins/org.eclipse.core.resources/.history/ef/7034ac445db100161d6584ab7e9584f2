@@ -1,0 +1,8 @@
+@namespace(uri="http://www.univ-nantes.fr/smalluml", prefix="smalluml")
+
+package smalluml;
+
+class SchemaUML  {
+	val relation[1..*] rel;
+	val class[2..*] c;
+}

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="ASCII"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:myDsl="http://www.xtext.org/example/eaa/MyDsl">
+  <myDsl:Domainmodel>
+    <elements xsi:type="myDsl:DataType" name="int"/>
+    <elements xsi:type="myDsl:DataType" name="string"/>
+    <elements xsi:type="myDsl:Entity" name="Person">
+      <attribute name="name" type="/0/@elements.1"/>
+      <role name="age" type="/0/@elements.0"/>
+      <role name="cardin1" type="/0/@elements.1"/>
+    </elements>
+    <elements xsi:type="myDsl:Entity" name="car">
+      <attribute name="name" type="/0/@elements.1"/>
+      <role name="cardin1" type="/0/@elements.1"/>
+    </elements>
+    <elements xsi:type="myDsl:Association" name="have">
+      <attribute name="cardin1" type="/0/@elements.1"/>
+      <role name="cardin2" type="/0/@elements.1"/>
+    </elements>
+  </myDsl:Domainmodel>
+  <myDsl:Domainmodel>
+    <elements xsi:type="myDsl:DataType" name="int"/>
+    <elements xsi:type="myDsl:DataType" name="string"/>
+    <elements xsi:type="myDsl:Entity" name="Person">
+      <attribute name="name" type="/1/@elements.1"/>
+      <role name="age" type="/1/@elements.0"/>
+      <role name="cardin1" type="/1/@elements.1"/>
+    </elements>
+    <elements xsi:type="myDsl:Entity" name="car">
+      <attribute name="name" type="/1/@elements.1"/>
+      <role name="cardin1" type="/1/@elements.1"/>
+    </elements>
+    <elements xsi:type="myDsl:Association" name="have">
+      <attribute name="cardin1" type="/1/@elements.1"/>
+      <role name="cardin2" type="/1/@elements.1"/>
+    </elements>
+  </myDsl:Domainmodel>
+  <myDsl:Domainmodel>
+    <elements xsi:type="myDsl:DataType" name="int"/>
+    <elements xsi:type="myDsl:DataType" name="string"/>
+    <elements xsi:type="myDsl:Entity" name="Person">
+      <attribute name="name" type="/2/@elements.1"/>
+      <role name="age" type="/2/@elements.0"/>
+      <role name="cardin1" type="/2/@elements.1"/>
+    </elements>
+    <elements xsi:type="myDsl:Entity" name="car">
+      <attribute name="name" type="/2/@elements.1"/>
+      <role name="cardin1" type="/2/@elements.1"/>
+    </elements>
+    <elements xsi:type="myDsl:Association" name="have">
+      <attribute name="cardin1" type="/2/@elements.1"/>
+      <role name="cardin2" type="/2/@elements.1"/>
+    </elements>
+  </myDsl:Domainmodel>
+</xmi:XMI>

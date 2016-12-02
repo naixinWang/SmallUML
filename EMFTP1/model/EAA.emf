@@ -1,0 +1,40 @@
+@namespace(
+	uri="EAA",
+	prefix="")
+package EAA;
+
+// une class qui peut relier tous les éléments 
+class Schema{
+	val Association[1..*] ass;
+	val Entity[2..*] e;
+}
+
+class Association{
+	attr String name;
+	val Attribute[*] listeAttribute;
+	val Role[2..*] listeRole;
+	
+}
+
+
+class Attribute{
+	attr String name;
+	attr String type;
+	
+}
+
+
+class Entity{
+	attr String name;
+	val Attribute[*] listeAttribute;
+	val Role[*] listeRole;
+	
+}
+
+
+class Role{
+	attr String cardinality;
+	
+}
+
+

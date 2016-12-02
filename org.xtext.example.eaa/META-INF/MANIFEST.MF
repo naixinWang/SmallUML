@@ -1,0 +1,31 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: org.xtext.example.eaa
+Bundle-Vendor: My Company
+Bundle-Version: 1.0.0.qualifier
+Bundle-SymbolicName: org.xtext.example.eaa; singleton:=true
+Bundle-ActivationPolicy: lazy
+Require-Bundle: org.eclipse.xtext,
+ org.eclipse.xtext.xbase,
+ org.eclipse.equinox.common;bundle-version="3.5.0",
+ org.eclipse.emf.ecore,
+ org.eclipse.xtext.xbase.lib,
+ org.antlr.runtime,
+ org.eclipse.xtext.util,
+ org.eclipse.xtend.lib,
+ org.eclipse.emf.common,
+ org.eclipse.m2e.maven.runtime,
+ org.eclipse.emf.mwe.core
+Bundle-RequiredExecutionEnvironment: JavaSE-1.6
+Export-Package: org.xtext.example.eaa.scoping,
+ org.xtext.example.eaa.serializer,
+ org.xtext.example.eaa.parser.antlr.internal,
+ org.xtext.example.eaa.myDsl.util,
+ org.xtext.example.eaa.validation,
+ org.xtext.example.eaa.myDsl,
+ org.xtext.example.eaa.myDsl.impl,
+ org.xtext.example.eaa.generator,
+ org.xtext.example.eaa.services,
+ org.xtext.example.eaa.parser.antlr,
+ org.xtext.example.eaa
+Import-Package: org.apache.log4j

@@ -1,0 +1,44 @@
+@namespace(uri="http://www.univ-nantes.fr/smalluml", prefix="smalluml")
+
+package smalluml;
+
+class SchemaUML  {
+	val Generalisation[*] gene;
+	val SmallClass[2..*] c;
+	val Association[1..*] ass;
+}
+
+
+class SmallClass {
+	attr String name; 
+	val Attribute[*] listeAttribute;
+	val Methode[*] listeMethode;
+}
+
+class Generalisation {
+	val SmallClass[1] source;
+	val SmallClass[1] cible;
+}
+
+class Association{
+	attr String name;
+	val SmallClass[1] source;
+	val SmallClass[1] cible;
+	val Attribute[*] listeAttribute;
+	val Role[2..*] listeRole;
+}
+
+class Role{
+	attr String cardinality;	
+}
+
+class Attribute {
+	attr String name;
+	attr String type;
+}
+
+class Methode {
+	attr String name;
+	attr String returnType;
+}
+

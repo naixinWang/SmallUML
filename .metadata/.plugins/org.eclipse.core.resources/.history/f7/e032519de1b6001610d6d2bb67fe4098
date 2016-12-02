@@ -1,0 +1,163 @@
+/**
+ */
+package smalluml.impl;
+
+import org.eclipse.emf.ecore.EClass;
+import org.eclipse.emf.ecore.EObject;
+import org.eclipse.emf.ecore.EPackage;
+
+import org.eclipse.emf.ecore.impl.EFactoryImpl;
+
+import org.eclipse.emf.ecore.plugin.EcorePlugin;
+
+import smalluml.*;
+import smalluml.SmallumlFactory;
+import smalluml.SmallumlPackage;
+
+/**
+ * <!-- begin-user-doc -->
+ * An implementation of the model <b>Factory</b>.
+ * <!-- end-user-doc -->
+ * @generated
+ */
+public class SmallumlFactoryImpl extends EFactoryImpl implements SmallumlFactory {
+	/**
+	 * Creates the default factory implementation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static SmallumlFactory init() {
+		try {
+			SmallumlFactory theSmallumlFactory = (SmallumlFactory)EPackage.Registry.INSTANCE.getEFactory(SmallumlPackage.eNS_URI);
+			if (theSmallumlFactory != null) {
+				return theSmallumlFactory;
+			}
+		}
+		catch (Exception exception) {
+			EcorePlugin.INSTANCE.log(exception);
+		}
+		return new SmallumlFactoryImpl();
+	}
+
+	/**
+	 * Creates an instance of the factory.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public SmallumlFactoryImpl() {
+		super();
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EObject create(EClass eClass) {
+		switch (eClass.getClassifierID()) {
+			case SmallumlPackage.SCHEMA_UML: return createSchemaUML();
+			case SmallumlPackage.SMALL_CLASS: return createSmallClass();
+			case SmallumlPackage.GENERALISATION: return createGeneralisation();
+			case SmallumlPackage.ASSOCIATION: return createAssociation();
+			case SmallumlPackage.ROLE: return createRole();
+			case SmallumlPackage.ATTRIBUTE: return createAttribute();
+			case SmallumlPackage.METHODE: return createMethode();
+			default:
+				throw new IllegalArgumentException("The class '" + eClass.getName() + "' is not a valid classifier");
+		}
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public SchemaUML createSchemaUML() {
+		SchemaUMLImpl schemaUML = new SchemaUMLImpl();
+		return schemaUML;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public SmallClass createSmallClass() {
+		SmallClassImpl smallClass = new SmallClassImpl();
+		return smallClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public Generalisation createGeneralisation() {
+		GeneralisationImpl generalisation = new GeneralisationImpl();
+		return generalisation;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public Association createAssociation() {
+		AssociationImpl association = new AssociationImpl();
+		return association;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public Role createRole() {
+		RoleImpl role = new RoleImpl();
+		return role;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public Attribute createAttribute() {
+		AttributeImpl attribute = new AttributeImpl();
+		return attribute;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public Methode createMethode() {
+		MethodeImpl methode = new MethodeImpl();
+		return methode;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public SmallumlPackage getSmallumlPackage() {
+		return (SmallumlPackage)getEPackage();
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @deprecated
+	 * @generated
+	 */
+	@Deprecated
+	public static SmallumlPackage getPackage() {
+		return SmallumlPackage.eINSTANCE;
+	}
+
+} //SmallumlFactoryImpl

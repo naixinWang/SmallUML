@@ -1,0 +1,36 @@
+grammar org.xtext.example.eaa.MyDsl with org.eclipse.xtext.common.Terminals
+
+generate myDsl "http://www.xtext.org/example/eaa/MyDsl"
+
+Domainmodel:
+	(elements+=Type)*;
+	
+Type:
+	DataType | Association | Entity 
+;
+
+DataType:
+	'datatype' name=ID
+;
+
+Association:
+	'association' name=ID '{'
+	(attribute+=Attribute)?
+	(role+=Role)*
+	'}'
+;
+
+Entity:
+	'entity' name=ID ('extends' superType=[Entity])? '{'
+	(attribute+=Attribute)?
+	(role+=Role)*
+	'}'
+;
+
+Attribute:
+	(many?='many')? name=ID ':' type=[Type]
+;
+
+Role:
+	(many?='many')? name=ID ':' type=[Type]
+;

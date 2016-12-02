@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map>
+	<bundle bundleID="1510" localization="OSGI-INF/l10n/bundle" name="org.xtext.SmallUML" project="org.xtext.SmallUML" provider="My Company"/>
+	<bundle bundleID="1512" localization="OSGI-INF/l10n/bundle" name="org.xtext.SmallUML.tests" project="org.xtext.SmallUML.tests" provider="My Company"/>
+	<bundle bundleID="1456" localization="plugin" name="%pluginName" project="SmallUML" provider="%providerName">
+		<library name="."/>
+	</bundle>
+	<bundle bundleID="1511" localization="OSGI-INF/l10n/bundle" name="org.xtext.SmallUML.ide" project="org.xtext.SmallUML.ide" provider="My Company"/>
+	<bundle bundleID="1514" localization="OSGI-INF/l10n/bundle" name="org.xtext.SmallUML.ui.tests" project="org.xtext.SmallUML.ui.tests" provider="My Company"/>
+	<bundle bundleID="1457" localization="plugin" name="%pluginName" project="UML" provider="%providerName">
+		<library name="."/>
+	</bundle>
+	<bundle bundleID="1464" localization="OSGI-INF/l10n/bundle" name="org.xtext.example.eaa" project="org.xtext.example.eaa" provider="My Company"/>
+	<bundle bundleID="1463" localization="plugin" name="%pluginName" project="EMFTP1" provider="%providerName">
+		<library name="."/>
+	</bundle>
+	<bundle bundleID="1513" class="org.xtext.SmallUML.ui.internal.SmallUMLActivator" localization="OSGI-INF/l10n/bundle" name="org.xtext.SmallUML.ui" project="org.xtext.SmallUML.ui" provider="My Company"/>
+</map>

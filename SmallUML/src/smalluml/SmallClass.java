@@ -1,0 +1,86 @@
+/**
+ */
+package smalluml;
+
+import org.eclipse.emf.common.util.EList;
+
+import org.eclipse.emf.ecore.EObject;
+
+/**
+ * <!-- begin-user-doc -->
+ * A representation of the model object '<em><b>Small Class</b></em>'.
+ * <!-- end-user-doc -->
+ *
+ * <p>
+ * The following features are supported:
+ * </p>
+ * <ul>
+ *   <li>{@link smalluml.SmallClass#getName <em>Name</em>}</li>
+ *   <li>{@link smalluml.SmallClass#getListeAttribute <em>Liste Attribute</em>}</li>
+ *   <li>{@link smalluml.SmallClass#getListeMethode <em>Liste Methode</em>}</li>
+ * </ul>
+ *
+ * @see smalluml.SmallumlPackage#getSmallClass()
+ * @model
+ * @generated
+ */
+public interface SmallClass extends EObject {
+	/**
+	 * Returns the value of the '<em><b>Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <p>
+	 * If the meaning of the '<em>Name</em>' attribute isn't clear,
+	 * there really should be more of a description here...
+	 * </p>
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Name</em>' attribute.
+	 * @see #setName(String)
+	 * @see smalluml.SmallumlPackage#getSmallClass_Name()
+	 * @model
+	 * @generated
+	 */
+	String getName();
+
+	/**
+	 * Sets the value of the '{@link smalluml.SmallClass#getName <em>Name</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Name</em>' attribute.
+	 * @see #getName()
+	 * @generated
+	 */
+	void setName(String value);
+
+	/**
+	 * Returns the value of the '<em><b>Liste Attribute</b></em>' containment reference list.
+	 * The list contents are of type {@link smalluml.Attribute}.
+	 * <!-- begin-user-doc -->
+	 * <p>
+	 * If the meaning of the '<em>Liste Attribute</em>' containment reference list isn't clear,
+	 * there really should be more of a description here...
+	 * </p>
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Liste Attribute</em>' containment reference list.
+	 * @see smalluml.SmallumlPackage#getSmallClass_ListeAttribute()
+	 * @model containment="true"
+	 * @generated
+	 */
+	EList<Attribute> getListeAttribute();
+
+	/**
+	 * Returns the value of the '<em><b>Liste Methode</b></em>' containment reference list.
+	 * The list contents are of type {@link smalluml.Methode}.
+	 * <!-- begin-user-doc -->
+	 * <p>
+	 * If the meaning of the '<em>Liste Methode</em>' containment reference list isn't clear,
+	 * there really should be more of a description here...
+	 * </p>
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Liste Methode</em>' containment reference list.
+	 * @see smalluml.SmallumlPackage#getSmallClass_ListeMethode()
+	 * @model containment="true"
+	 * @generated
+	 */
+	EList<Methode> getListeMethode();
+
+} // SmallClass
